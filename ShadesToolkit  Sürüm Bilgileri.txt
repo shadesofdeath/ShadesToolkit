@@ -1,0 +1,95 @@
+
+ ★ ★ ★ ShadesToolkit Sürüm Bilgileri ★ ★ ★
+
+ ★★ Sürüm 1.4 ★★
+- Debloat bölümüne ToolkitHelper metodu eklendi
+- Bazı küçük hatalar düzeltildi
+
+ ★★ Sürüm 1.3 ★★
+- Küçük hata düzeltmeleri
+- Değişiklikleri kaydettikten sonra artık [DELETED] Klasörü oluşma sorunu çözüldü
+  yani artık wim boyutu çok daha düşük boyutta çıkacak.
+- Dism Reset Base özelliği kaldırıldı bunun yerine alternatifi olan "Sistem Açıldıktan sonra
+  Sistem Dosyalarını Sıkıştır" Özelliğini çalıştırabilirsiniz.
+- Windows Servisleri 15 adet yeni servis eklendi.
+- Listdeki tüm servisleri tek tuşla devre dışı bırakılabilir.
+
+💩💩 Hatalar 💩💩
+Windows Özellikleri bölümünde Etkinleştirme veya Devre Dışı bırakma işlemini ISO Dosyasında hiçbir oynama
+yapmadan kullanırsanız çalışır fakat değişiklikler yaptıktan sonra Windows Özelliklerini Etkinleştirme veya Devre Dışı bırakmaya çalışırsanız hata alırsınız. Bu sorun çözülmeye çalışılıyor.
+
+★★ Sürüm 1.2 ★★
+- Autounattend.xml dosyası oluşturma bölümüne geliştirildi.
+- DefaultLayout.xml özelliği geliştirildi
+- Windows Uygulama Temasını Karanlık Mod yap
+- Windows Temasını Karanlık Mod yap
+- Masaüstünde Bilgisayarım Kısayolunu Ekle
+- Masaüstünde Denetim Masası Kısayolunu Ekle
+- Microsoft Teams Otomatik kurulumunu kapat özelliği çalışmıyordu düzeltildi
+- Masaüstüne MASS_AIO Windows Etkinleştirme Scripti ekle
+- Bypass Windows 11 TPM/SecureBoot özelliği artık çalışıyor
+- Geliştiriciye destek amaçlı küçük ekleme yapıldı
+
+* Bilinen Hatalar;
+* Hata bulursanız bildirin Discord : ShadesOfDeath#0719
+
+ ★★ Sürüm 1.1 ★★
+- Windows Servisleri eklendi
+- ISO Çıktısı artık "ISO" Klasörüne kaydedilecek
+- Windows Update bir sonraki windows sürümünü seçebileceğiniz ayarlar eklendi
+- Autounattend.xml dosyası oluşturuma özelliği eklendi
+- Bazı yazım hataları düzeltildi.
+
+ ★★ Sürüm 1.0 ★★ 
+- İlk yapı v1.0 Beta
+- Debloat
+- OneDrive Kaldır
+- Microsoft Edge Kaldır
+- Windows Defender Kaldır
+- WinPE Kaldır
+- Internet Explorer Kaldır
+- Windows Media Player Kaldır
+- Windows Özellikleri Etkinleştir-Devre Dışı Bırak
+- Windows Fotoğraf Görüntüleyicisini Etkinleştir
+- Sağ-tık menüsüne Sahiplik Al ekle
+- 260 Karakter Sınırlamasını Kaldır
+- Görsel Geribildirim kapat (Visual Feedback)
+- Sağ-tık menüsüne Yanıt Vermeyen işlemlerini sonlandır ekle
+- Sağ-tık menüsüne Geri dönüşüm kutusunu boşalt ekle
+- Adım Kaydedicisini devre dışı bırak
+- Otomatik Oynat devre dışı bırak
+- Gelişmiş dizin oluşturma devre dışı bırak
+- Uygulama Başlatma Takibini Devre Dışı Bırak
+- XBox Game Bar kapat
+- Donanım Hızlandırmalı GPU Zamanlamasını Devre Dışı Bırak
+- Hazırda Bekletme Devre Dışı Bırak
+- Eski Ses Çubuğunu ekle
+- Sağ-tık Yol Olarak Kopyala seçeneği ekle
+- JPEG Masaüstü Duvar Kağıdı Kalitesini Düşürme devre dışı bırak
+- Bypass Windows 11 TPM/SecureBoot
+- Ayrılmış Depolamayı Devre Dışı Bırak  
+- Windows 11 Masaüstünde "Sistem gereksinimleri karşılanmadı" Filigranını kaldırın
+- Modern Beklemeyi Devre Dışı Bırak 
+- Windows Defender Deve Dışı Bırak
+- Windows 11'de cihazınızın kurulumunu tamamlayalım uyarısını Devre Dışı Bırak
+- Windows 11'de Oturum Açma Sırasında Gizlilik Ayarları Deneyimini Seçmeyi Devre Dışı Bırak
+- OneDrive Devre Dışı Bırak
+- Windows 11'de Çekirdek İzolasyon Bellek Bütünlüğünü Devre Dışı Bırak
+- Windows Güncellemelerine Sürücüleri Dahil Etmeyi Devre Dışı Bırak
+- Otomatik Windows Yükseltmesini Devre Dışı Bırak 
+- Windows 11'de Görev Çubuğuna Sohbet Düğmesini Kaldır
+- Windows 11'de Eski Sağ Tıklama Bağlam menüsünü geri yükle
+- Microsoft Team Otomatik kurulumunu kapat
+- Dism Reset Base işlemini Başlat
+- Esd-Wim çevirme
+- Wim-Esd çevirme
+- Install.wim LZMS Solid sıkıştırma
+- Özel Regedit Dosyası Entegre etme
+- Özel İmleç dosyalarını ekle
+- Özel Medya dosyalarını ekle
+- Özel Tema dosyalarını ekle
+- Özel System32 dosyalarını ekle
+- Özel SysWOW64 dosyalarını ekle
+- Özel Masaüstü arka planı dosyalarını ekle,
+- Özel Masaüstü Dosya-Klasör ekle
+-----------------------------------------------------------------------------------
