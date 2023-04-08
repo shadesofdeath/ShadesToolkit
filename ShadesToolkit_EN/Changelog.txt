@@ -1,6 +1,11 @@
 ★ ★ ★ ShadesToolkit Version Information ★ ★ ★
 ------------------------------------------------
 
+★★ Version 1.5 ★★
+
+- Added Dism Reset Base
+- Added the ability to integrate drivers.
+
 ------------------------------------------------
 ★★ Version 1.4 ★★
 

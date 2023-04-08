@@ -9,7 +9,7 @@
 @echo off
 color 4F
 setlocal enabledelayedexpansion
-set ver=v1.4
+set ver=v1.5
 title %ver% - by ShadesOfDeath
 chcp 65001 >nul
 mode con cols=100 lines=35
@@ -52,8 +52,8 @@ if "!CLEAR!"=="Y" (
 	Dism /Unmount-image /MountDir:%INSTALL% /Discard
 )
 :menu
+set choice=NT
 cls
-set choice = NT
 echo.
 echo  ====================================
 echo.         ShadesToolkit %ver%
@@ -107,7 +107,7 @@ goto menu
 
 :windows_services
 cls
-set choice = NT
+set choice=NT
 mode con cols=140 lines=37
 echo  =====================================================================================================================================
 echo.                                                   ShadesToolkit %ver%
@@ -209,7 +209,7 @@ goto windows_services
 
 
 :etkin_devredısı
-set choice = NT
+set choice=NT
 cls
 echo.
 echo  ====================================
@@ -239,7 +239,7 @@ goto etkin_devredısı
 :özellik_etkinlestir
 mode con cols=125 lines=50
 cls
-set choice = NT
+set choice=NT
 echo.
 echo  ==================================================
 echo.          Windows Özellikleri Etkinleştir
@@ -326,7 +326,7 @@ goto özellik_etkinlestir
 :özellik_devredısı
 mode con cols=125 lines=50
 cls
-set choice = NT
+set choice=NT
 echo.
 echo  ==================================================
 echo.       Windows Özellikleri Devre Dışı Bırak
@@ -404,7 +404,7 @@ pause
 goto özellik_devredısı
 
 :customize
-set choice = NT
+set choice=NT
 cls
 echo.
 echo  ====================================
@@ -452,7 +452,7 @@ goto customize
 
 
 :target_windows_version
-set choice = NT
+set choice=NT
 cls
 echo.
 echo  ====================================
@@ -551,7 +551,7 @@ pause
 goto customize
 
 :Sistem_Ayarları
-set choice = NT
+set choice=NT
 cls
 echo.
 echo  ====================================
@@ -659,7 +659,7 @@ pause
 goto customize
 
 :entegre
-set choice = NT
+set choice=NT
 cls
 echo.
 echo  ====================================
@@ -669,6 +669,8 @@ echo.
 echo  [1] Özel Regedit Kayıtları ekle
 echo.
 echo  [2] Özel Dosyalar
+echo.
+echo  [3] Driver entegre et
 echo.
 echo.
 echo  [Z] Geri
@@ -680,14 +682,30 @@ echo.
 set /p choice= Lütfen bir seçenek belirle :  
 if "%choice%" == "1" goto custom_regedit
 if "%choice%" == "2" goto özel_dosyalar
+if "%choice%" == "3" goto driver_entegre
 if "%choice%" == "z" goto menu
 if "%choice%" == "Z" goto menu
 if "%choice%" == "x" goto end
 if "%choice%" == "X" goto end
 goto entegre
 
+:driver_entegre
+set choice=NT
+cls
+set mountdir=Mount\Install
+set driverdir=Custom\Driver
+
+if not exist "%driverdir%\*.inf" (
+  echo Hata: %driverdir% dizininde INF dosyasi bulunamadi.
+  pause
+  goto entegre
+)
+dism /Image:%mountdir% /Add-Driver /Driver:%driverdir% /Recurse /ForceUnsigned
+pause
+goto entegre
+
 :özel_dosyalar
-set choice = NT
+set choice=NT
 cls
 echo.
 echo  ====================================
@@ -854,7 +872,7 @@ Reg import %~1
 goto :eof
 
 :debloat
-set choice = NT
+set choice=NT
 cls
 echo.
 echo  ====================================
@@ -1078,7 +1096,7 @@ pause
 goto debloat_menu
 
 :debloat_menu
-set choice = NT
+set choice=NT
 cls
 echo.
 echo  ====================================
@@ -1105,7 +1123,7 @@ if "%choice%" == "X" goto end
 goto debloat_menu
 
 :remove_components
-set choice = NT
+set choice=NT
 cls
 chcp 437 > NUL 2>&1
 Bin\MinSudo.exe --TrustedInstaller --NoLogo --Verbose --WorkDir="" cmd /c "PowerShell.exe -ExecutionPolicy Bypass -File "Bin\remove_components.ps1""
@@ -1186,7 +1204,7 @@ pause
 goto menu
 
 :source
-set choice = NT
+set choice=NT
 cls
 echo.
 echo  ====================================
@@ -1258,7 +1276,6 @@ goto menu
 set "wimlib=Bin\wimlib-imagex.exe"
 set "install_wim=Extracted\sources\install.wim"
 set "mount_path=Mount\Install"
-setlocal enabledelayedexpansion
 
 set count=0
 
@@ -1286,7 +1303,7 @@ pause
 goto menu
 
 :wim_menu
-set choice = NT
+set choice=NT
 cls
 set "wimlib=Bin\wimlib-imagex.exe"
 set "install_wim=Extracted\sources\install.wim"
@@ -1305,6 +1322,7 @@ echo  [4] Install.wim dosyasından sürüm sil (Index Sil)
 echo.
 echo  [5] ISO Dosyası oluştur
 echo.
+echo  [6] Dism ResetBase İşlemini başlat
 echo.
 echo  [Z] Geri
 echo.
@@ -1317,15 +1335,32 @@ if "%choice%" == "2" goto esd_wim
 if "%choice%" == "3" goto compress_wim
 if "%choice%" == "4" goto Index_Sil
 if "%choice%" == "5" goto make_iso
+if "%choice%" == "6" goto dism_resetbase 
 if "%choice%" == "z" goto menu
 if "%choice%" == "Z" goto menu
 if "%choice%" == "x" goto end
 if "%choice%" == "X" goto end
 goto wim_menu
 
+
+:dism_resetbase
+cls
+set choice=NT
+set mountdir=Mount\Install
+if exist %mountdir%\Windows (
+    echo Windows imajı zaten %mountdir% konumunda mount edilmiş. ResetBase işlemine devam ediliyor...
+    Dism /Image:%mountdir% /Cleanup-Image /StartComponentCleanup /ResetBase
+    pause
+    goto wim_menu
+) else (
+    echo Hata: Windows imajı %mountdir% konumunda mount edilmemiş. Lütfen imajı mount edin ve yeniden deneyin.
+    pause
+    goto wim_menu
+)
+
 :ince_ayarlar
 cls
-set choice = NT
+set choice=NT
 echo  ====================================
 echo          ShadesToolkit %ver%
 echo  ====================================

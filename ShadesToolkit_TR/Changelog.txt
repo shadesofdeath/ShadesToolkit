@@ -1,6 +1,10 @@
 
  ★ ★ ★ ShadesToolkit Sürüm Bilgileri ★ ★ ★
 
+ ★★ Sürüm 1.5 ★★
+- Dism Reset Base eklendi
+- Driver entegre etme özelliği eklendi
+
  ★★ Sürüm 1.4 ★★
 - Debloat bölümüne ToolkitHelper metodu eklendi
 - Bazı küçük hatalar düzeltildi
@@ -14,11 +18,7 @@
 - Windows Servisleri 15 adet yeni servis eklendi.
 - Listdeki tüm servisleri tek tuşla devre dışı bırakılabilir.
 
-💩💩 Hatalar 💩💩
-Windows Özellikleri bölümünde Etkinleştirme veya Devre Dışı bırakma işlemini ISO Dosyasında hiçbir oynama
-yapmadan kullanırsanız çalışır fakat değişiklikler yaptıktan sonra Windows Özelliklerini Etkinleştirme veya Devre Dışı bırakmaya çalışırsanız hata alırsınız. Bu sorun çözülmeye çalışılıyor.
-
-★★ Sürüm 1.2 ★★
+ ★★ Sürüm 1.2 ★★
 - Autounattend.xml dosyası oluşturma bölümüne geliştirildi.
 - DefaultLayout.xml özelliği geliştirildi
 - Windows Uygulama Temasını Karanlık Mod yap
@@ -29,9 +29,6 @@ yapmadan kullanırsanız çalışır fakat değişiklikler yaptıktan sonra Wind
 - Masaüstüne MASS_AIO Windows Etkinleştirme Scripti ekle
 - Bypass Windows 11 TPM/SecureBoot özelliği artık çalışıyor
 - Geliştiriciye destek amaçlı küçük ekleme yapıldı
-
-* Bilinen Hatalar;
-* Hata bulursanız bildirin Discord : ShadesOfDeath#0719
 
  ★★ Sürüm 1.1 ★★
 - Windows Servisleri eklendi
