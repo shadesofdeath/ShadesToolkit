@@ -1,8 +1,8 @@
-# Shades Toolkit :tw-1f48e:
+# Shades Toolkit 💎
 
 Shades Toolkit, Windows ISO dosyalarınızı özelleştirmenize ve çeşitli özelleştirmeler uygulayarak kendi özel Windows imajınızı oluşturmanıza olanak tanıyan bir araçtır.
 
-## Özellikler :tw-1f525:
+## Özellikler ⚙️
 
 - ISO Dosyasını klasöre Çıkar
 - Wim Dosyasını mount etme
@@ -51,7 +51,7 @@ Shades Toolkit, Windows ISO dosyalarınızı özelleştirmenize ve çeşitli öz
 - Install.wim dosyasından sürüm sil (Index Sil)
 - ISO Dosyası oluştur
 
-## Kullanım :tw-1f4d6:
+## Kullanım 📖
 
 - ISO dosyasını "Kaynak" bölümünden "ISO dosyasını bir klasöre çıkarma" seçeneğini seçerek "Extracted" klasörüne çıkartın.
 
@@ -65,7 +65,7 @@ Shades Toolkit, Windows ISO dosyalarınızı özelleştirmenize ve çeşitli öz
 
 - Son olarak, ISO dosyanızı oluşturmak için 9. menüde bulunan "ISO Dosyası Oluştur" seçeneğini seçin ve ISO dosyanız için bir isim ve etiket girin.
 
-## Proje Hakkında :tw-a9:
+## Proje Hakkında ©️
 - Bu proje ShadesOfDeath tarafından geliştirilmektedir.
 - Github Adresim : https://github.com/shadesofdeath
 - Kahve Ismarla : https://www.buymeacoffee.com/berkayay
