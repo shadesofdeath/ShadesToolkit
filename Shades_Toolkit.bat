@@ -101,7 +101,7 @@ if "%choice%" == "X" goto end
 goto menu
 
 :DESTEK
-start http://bc.vc/bWn7gS2
+start "" "Bin\Thanx.html"
 cls
 goto menu
 
