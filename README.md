@@ -50,6 +50,8 @@ Shades Toolkit is a tool that allows you to customize your Windows ISO files and
 - Compress Wim file as LZMS (solid)
 - Remove version from Install.wim file (Delete Index)
 - Create ISO file
+- Dism Reset Base
+- Integrate drivers
 
 ## Usage 📖
 
