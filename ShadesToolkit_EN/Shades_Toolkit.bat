@@ -693,7 +693,7 @@ set mountdir=Mount\Install
 set driverdir=Custom\Driver
 
 if not exist "%driverdir%\*.inf" (
-  echo Hata: %driverdir% dizininde INF dosyasi bulunamadi.
+  echo Error: INF file not found in %driverdir% directory!
   pause
   goto entegre
 )
