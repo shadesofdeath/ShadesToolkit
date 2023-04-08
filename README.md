@@ -1,75 +1,74 @@
 # Shades Toolkit 💎
 
-Shades Toolkit, Windows ISO dosyalarınızı özelleştirmenize ve çeşitli özelleştirmeler uygulayarak kendi özel Windows imajınızı oluşturmanıza olanak tanıyan bir araçtır.
+Shades Toolkit is a tool that allows you to customize your Windows ISO files and create your own custom Windows image by applying various customizations
 
-## Özellikler ⚙️
+## Features ⚙️
 
-- ISO Dosyasını klasöre Çıkar
-- Wim Dosyasını mount etme
-- Dism Metod  Debloat ( Hızlı - Yüzeysel)
-- ToolkitHelper Metod (Yavaş - Derinlemesine)
-- Özel Reg dosyaları İmaja entegre etme
-- Özel İmleç dosyalarını ekle
-- Özel Medya dosyalarını ekle
-- Özel Tema dosyalarını ekle
-- Özel System32 dosyalarını ekle
-- Özel SysWOW64 dosyalarını ekle
-- Özel Masaüstü arka planı dosyalarını ekle
-- Özel Masaüstü Dosya-Klasör ekle
-- OneDrive kaldır
-- Microsoft Edge Kaldır
-- Windows Defender Kaldır
-- Windows Recovery kaldır (WinRE)
-- Internet Explorer kaldır
-- Windos Media Player kaldır
-- Microsoft Teams kaldır
-- Windows Özellikleri ( Etkinleştir - Devre Dışı Bırak )
-- DefaultLayout.xml temizleme
-- Sistem Ayarları
-- Sistem Açıldıktan sonra Sistem Dosyalarını Sıkıştır
-- Autounattend.xml oluştur
-- Bir sonraki Windows versiyonu belirle
-- Masaüstüne MASS_AIO Windows Etkinleştirme Scriptini Ekle
+- Extract ISO file to a folder
+- Mount Wim file
+- Dism Method Debloat (Fast - Superficial)
+- ToolkitHelper Method (Slow - Thorough)
+- Integrate custom Reg files into the image
+- Add custom Cursor files
+- Add custom Media files
+- Add custom Theme files
+- Add custom System32 files
+- Add custom SysWOW64 files
+- Add custom Desktop background files
+- Add custom Desktop File-Folder
+- Remove OneDrive
+- Remove Microsoft Edge
+- Remove Windows Defender
+- Remove Windows Recovery (WinRE)
+- Remove Internet Explorer
+- Remove Windows Media Player
+- Remove Microsoft Teams
+- Windows Features (Enable - Disable)
+- Clean DefaultLayout.xml
+- System Settings
+- Compress System Files after boot
+- Create Autounattend.xml
+- Determine the next Windows version
+- Add MASS_AIO Windows Activation Script to the desktop
 - Bypass Windows 11 TPM/SecureBoot
-- Ayrılmış Depolamayı Devre Dışı Bırak
-- Windows 11 Masaüstünde "Sistem gereksinimleri karşılanmadı" Filigranını kaldırın
-- Modern Beklemeyi Devre Dışı Bırak
-- Windows Defender Deve Dışı Bırak
-- Windows 11'de cihazınızın kurulumunu tamamlayalım uyarısını Devre Dışı Bırak
-- Windows 11'de Oturum Açma Sırasında Gizlilik Ayarları Deneyimini Seçmeyi Devre Dışı Bırak
-- OneDrive Devre Dışı Bırak
-- Windows 11'de Çekirdek İzolasyon Bellek Bütünlüğünü Devre Dışı Bırak
-- Windows Güncellemelerine Sürücüleri Dahil Etmeyi Devre Dışı Bırak
-- Otomatik Windows Yükseltmesini Devre Dışı Bırak
-- Cortana Devre Dışı Bırak
-- Windows 11'de Görev Çubuğuna Sohbet Düğmesini Kaldır
-- Windows 11'de Eski Sağ Tıklama Bağlam menüsünü geri yükle
-- Bazı Windows Servislerini ( Devre Dışı Bırak )
-- Wim ESD çevir
-- ESD Wim çevir
-- Wim dosyasını LZMS (solid) olarak sıkıştır
-- Install.wim dosyasından sürüm sil (Index Sil)
-- ISO Dosyası oluştur
+- Disable Reserved Storage
+- Remove "Hardware requirements not met" watermark on Windows 11 desktop
+- Disable Modern Standby
+- Disable Windows Defender
+- Disable "Let's finish setting up your device" prompt on Windows 11
+- Disable Select privacy settings experience during sign-in on Windows 11
+- Disable OneDrive
+- Disable Kernel Isolation Memory Integrity on Windows 11
+- Disable including drivers with Windows Updates
+- Disable automatic Windows upgrades
+- Disable Cortana
+- Remove Chat button from Taskbar on Windows 11
+- Restore old right-click context menu on Windows 11
+- Disable some Windows services
+- Convert Wim ESD
+- Convert ESD Wim
+- Compress Wim file as LZMS (solid)
+- Remove version from Install.wim file (Delete Index)
+- Create ISO file
 
-## Kullanım 📖
+## Usage 📖
 
-- ISO dosyasını "Kaynak" bölümünden "ISO dosyasını bir klasöre çıkarma" seçeneğini seçerek "Extracted" klasörüne çıkartın.
+- To extract the ISO file, select the "Extract ISO file to the 'Extracted' folder" option from the "Source" section.
 
-- Eğer ISO dosyanız zaten çıkartılmışsa, manuel olarak "Extracted" klasörüne kopyalayın.
+- If your ISO file has already been extracted, manually copy it to the "Extracted" folder.
 
-- "1. veya 2." seçeneklerinden birini tamamladıysanız, Install.wim dosyasını mount etme işlemine geçin. "Kaynak" bölümünden "Install.wim mount et" seçeneğini seçin, üzerinde çalışacağınız Windows sürümünün index numarasını listeden girin ve mount işleminin tamamlanmasını bekleyin.
+- Once you have completed either option 1 or 2, proceed to mount the Install.wim file. Select the "Mount Install.wim" option from the "Source" section, enter the index number of the Windows version you will be working on from the list, and wait for the mount process to complete.
 
-- Toolkit de bulunan istediğiniz ayar veya özelleştirmeyi uygulayın.
+- Apply the desired settings or customization found in the Toolkit.
 
-- Yaptığınız değişiklikleri mount edilen sistemde kaydetmek için 8. menüde bulunan "Değişikleri Uygula" seçeneğini seçin ve işlemin tamamlanmasını bekleyin. WIM dosyanız hazır olacak.
+- To save the changes you made in the mounted system, select the "Apply Changes" option in the 8th menu and wait for the process to complete. Your WIM file will be ready.
 
-- Son olarak, ISO dosyanızı oluşturmak için 9. menüde bulunan "ISO Dosyası Oluştur" seçeneğini seçin ve ISO dosyanız için bir isim ve etiket girin.
+- Finally, to create your ISO file, select the "Create ISO File" option in the 9th menu and enter a name and label for your ISO file.
 
-## Proje Hakkında ©️
-- Bu proje ShadesOfDeath tarafından geliştirilmektedir.
-- Github Adresim : https://github.com/shadesofdeath
-- Kahve Ismarla : https://www.buymeacoffee.com/berkayay
-- Bu proje başkaları tarafından geliştirilebilir. Ancak, orijinal içerik
-bağlantıları paylaşmak ve paylaşan geliştiricinin kaynağın orijinal yaratıcısı
-olduğunu belirtmek şartıyla yapılabilir.
-- Lütfen bulduğunuz hataları "berkays0733@gmail.com" adresine mail atın.
+## About the project ©️
+- This project is being developed by ShadesOfDeath.
+
+M- y Github address: https://github.com/shadesofdeath
+- Buy Me a Coffee: https://www.buymeacoffee.com/berkayay
+- This project can be developed by others as well. However, it can be done by sharing the original content links and indicating that the sharing developer is the original creator of the source.
+- Please send any bugs you find to "berkays0733@gmail.com".
