@@ -67,8 +67,6 @@ Shades Toolkit is a tool that allows you to customize your Windows ISO files and
 
 ## About the project ©️
 - This project is being developed by ShadesOfDeath.
-
-M- y Github address: https://github.com/shadesofdeath
 - Buy Me a Coffee: https://www.buymeacoffee.com/berkayay
 - This project can be developed by others as well. However, it can be done by sharing the original content links and indicating that the sharing developer is the original creator of the source.
 - Please send any bugs you find to "berkays0733@gmail.com".
