@@ -669,6 +669,8 @@ echo  [2] Special Files
 echo.
 echo  [3] Integrate Drivers
 echo.
+echo  [4] Integrate with MicrosoftStore
+echo.
 echo.
 echo  [Z] Back
 echo.
@@ -680,10 +682,61 @@ set /p choice= Please choose an option :
 if "%choice%" == "1" goto custom_regedit
 if "%choice%" == "2" goto özel_dosyalar
 if "%choice%" == "3" goto driver_entegre
+if "%choice%" == "4" goto MicrosoftStore
 if "%choice%" == "z" goto menu
 if "%choice%" == "Z" goto menu
 if "%choice%" == "x" goto end
 if "%choice%" == "X" goto end
+goto entegre
+
+:MicrosoftStore
+set choice=NT
+cls
+REM Microsoft Store ve gerekli componentler indirme işlemi
+set "URL1=https://github.com/DarkOS-CustomWindows/Microsoft-Store-Install/raw/main/Microsoft.DesktopAppInstaller.msixbundle"
+set "URL2=https://github.com/DarkOS-CustomWindows/Microsoft-Store-Install/raw/main/Microsoft.NET.Native.Framework.1.3.x64.appx"
+set "URL3=https://github.com/DarkOS-CustomWindows/Microsoft-Store-Install/raw/main/Microsoft.NET.Native.Framework.2.2.x64.Appx"
+set "URL4=https://github.com/DarkOS-CustomWindows/Microsoft-Store-Install/raw/main/Microsoft.NET.Native.Runtime.1.3.x64.appx"
+set "URL5=https://github.com/DarkOS-CustomWindows/Microsoft-Store-Install/raw/main/Microsoft.NET.Native.Runtime.2.2.x64.Appx"
+set "URL6=https://github.com/DarkOS-CustomWindows/Microsoft-Store-Install/raw/main/Microsoft.UI.Xaml.2.4.x64.Appx"
+set "URL7=https://github.com/DarkOS-CustomWindows/Microsoft-Store-Install/raw/main/Microsoft.UI.Xaml.2.7.x64.Appx"
+set "URL8=https://github.com/DarkOS-CustomWindows/Microsoft-Store-Install/raw/main/Microsoft.VCLibs.140.00.UWPDesktop.x64.appx"
+set "URL9=https://github.com/DarkOS-CustomWindows/Microsoft-Store-Install/raw/main/Microsoft.VCLibs.140.00.x64.Appx"
+set "URL10=https://github.com/DarkOS-CustomWindows/Microsoft-Store-Install/raw/main/Microsoft.WindowsStore.msixbundle"
+set "URL11=https://github.com/DarkOS-CustomWindows/Microsoft-Store-Install/raw/main/Microsoft.XboxIdentityProvider.AppxBundle"
+
+REM dosyaların kaydedileceği yolu seçin
+set download_path=Custom\MicrosoftStore
+
+REM aria2c'yi kullanarak dosyaları indirin
+Bin\aria2c.exe -x 16 -s 16 -d "%download_path%" "%URL1%"
+Bin\aria2c.exe -x 16 -s 16 -d "%download_path%" "%URL2%"
+Bin\aria2c.exe -x 16 -s 16 -d "%download_path%" "%URL3%"
+Bin\aria2c.exe -x 16 -s 16 -d "%download_path%" "%URL4%"
+Bin\aria2c.exe -x 16 -s 16 -d "%download_path%" "%URL5%"
+Bin\aria2c.exe -x 16 -s 16 -d "%download_path%" "%URL6%"
+Bin\aria2c.exe -x 16 -s 16 -d "%download_path%" "%URL7%"
+Bin\aria2c.exe -x 16 -s 16 -d "%download_path%" "%URL8%"
+Bin\aria2c.exe -x 16 -s 16 -d "%download_path%" "%URL9%"-
+Bin\aria2c.exe -x 16 -s 16 -d "%download_path%" "%URL10%"
+Bin\aria2c.exe -x 16 -s 16 -d "%download_path%" "%URL11%"
+cls
+echo.
+echo Microsoft Store ve gerekli paketler indirildi..
+set mountdir=Mount\Install
+Dism /image:%mountdir% /Add-ProvisionedAppxPackage /PackagePath:Custom\MicrosoftStore\Microsoft.DesktopAppInstaller.msixbundle /LicensePath=Bin\Lisans\Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.xml /region=all
+Dism /image:%mountdir% /Add-ProvisionedAppxPackage /PackagePath:Custom\MicrosoftStore\Microsoft.NET.Native.Framework.1.3.x64.appx /SkipLicense /region=all
+Dism /image:%mountdir% /Add-ProvisionedAppxPackage /PackagePath:Custom\MicrosoftStore\Microsoft.NET.Native.Framework.2.2.x64.Appx /SkipLicense /region=all
+Dism /image:%mountdir% /Add-ProvisionedAppxPackage /PackagePath:Custom\MicrosoftStore\Microsoft.NET.Native.Runtime.1.3.x64.appx /SkipLicense /region=all
+Dism /image:%mountdir% /Add-ProvisionedAppxPackage /PackagePath:Custom\MicrosoftStore\Microsoft.NET.Native.Runtime.2.2.x64.Appx /SkipLicense /region=all
+Dism /image:%mountdir% /Add-ProvisionedAppxPackage /PackagePath:Custom\MicrosoftStore\Microsoft.UI.Xaml.2.4.x64.Appx /SkipLicense /region=all
+Dism /image:%mountdir% /Add-ProvisionedAppxPackage /PackagePath:Custom\MicrosoftStore\Microsoft.UI.Xaml.2.7.x64.Appx /SkipLicense /region=all
+Dism /image:%mountdir% /Add-ProvisionedAppxPackage /PackagePath:Custom\MicrosoftStore\Microsoft.VCLibs.140.00.UWPDesktop.x64.appx /SkipLicense /region=all
+Dism /image:%mountdir% /Add-ProvisionedAppxPackage /PackagePath:Custom\MicrosoftStore\Microsoft.VCLibs.140.00.x64.Appx /SkipLicense /region=all
+Dism /image:%mountdir% /Add-ProvisionedAppxPackage /PackagePath:Custom\MicrosoftStore\Microsoft.WindowsStore.msixbundle /SkipLicense /region=all
+Dism /image:%mountdir% /Add-ProvisionedAppxPackage /PackagePath:Custom\MicrosoftStore\Microsoft.XboxIdentityProvider.AppxBundle /LicensePath=Bin\Lisans\Microsoft.XboxIdentityProvider_8wekyb3d8bbwe.xml /region=all
+DISM.exe /Image:Mount\Install /Optimize-ProvisionedAppxPackages
+pause
 goto entegre
 
 :driver_entegre
