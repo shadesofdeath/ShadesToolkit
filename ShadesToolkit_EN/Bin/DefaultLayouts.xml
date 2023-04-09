@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FullDefaultLayoutTemplate
+  xmlns="http://schemas.microsoft.com/Start/2014/FullDefaultLayout"
+  xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout"
+  Version="1">
+  <StartLayoutCollection>
+    <StartLayout
+      PreInstalledAppsEnabled="false"
+      TargetedContentTilesEnabled="false"
+      GroupCellWidth="6" />
+  </StartLayoutCollection>
+</FullDefaultLayoutTemplate>
