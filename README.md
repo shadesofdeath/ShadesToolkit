@@ -53,6 +53,7 @@ Shades Toolkit is a tool that allows you to customize your Windows ISO files and
 - Dism Reset Base
 - Integrate drivers
 - Integrate MicrosoftStore
+- Customize ContextMenu
 
 ## Usage 📖
 
