@@ -1,0 +1,108 @@
+
+★ ★ ★ ShadesToolkit Version Information ★ ★ ★
+
+★★ Version 1.7 ★★
+Added feature to add shortcut to Context Menu.
+Updated to WimLib version 1.14.
+Some specific improvements and bug fixes.
+
+★★ Version 1.6 ★★
+
+Added Microsoft Store integration feature
+Added GUI interface to the ISO file extraction section in the folder
+Updated the interface of the ToolkitHelper debloat method to be more modern.
+
+★★ Version 1.5 ★★
+
+- Added Dism Reset Base
+- Added the ability to integrate drivers.
+
+★★ Version 1.4 ★★
+
+ToolkitHelper method added to the Debloat section
+Some minor bugs fixed
+
+★★ Version 1.3 ★★
+
+Minor bug fixes
+The problem of creating a [DELETED] folder after saving the changes has been resolved. This means that the wim size will now be much smaller.
+Dism Reset Base feature has been removed, and you can run the alternative "Compress System Files after the System is Booted" feature instead.
+15 new Windows services added to the list.
+All services in the list can be disabled with a single click.
+💩💩 Known Issues 💩💩
+If you use the Enable or Disable Windows Features function in the ISO file without any changes, it works, but if you try to enable or disable Windows Features after making changes, you will receive an error. This issue is being worked on.
+
+★★ Version 1.2 ★★
+
+Improved Autounattend.xml file creation section.
+Improved DefaultLayout.xml feature
+Make Windows App Theme Dark Mode
+Make Windows Theme Dark Mode
+Add My Computer shortcut to Desktop
+Add Control Panel shortcut to Desktop
+Fixed the feature to turn off automatic installation of Microsoft Teams
+Add MASS_AIO Windows Activation Script to Desktop
+Bypass Windows 11 TPM/SecureBoot feature now works
+Added a small addition for developer support
+
+★★ Version 1.1 ★★
+
+Windows Services added
+ISO Output will now be saved in the "ISO" folder
+Windows Update settings added to select the next Windows version
+Autounattend.xml file creation feature added
+Some spelling mistakes fixed.
+
+★★ Version 1.0 ★★
+
+Initial build v1.0 Beta
+Debloat
+Remove OneDrive
+Remove Microsoft Edge
+Remove Windows Defender
+Remove WinPE
+Remove Internet Explorer
+Enable-Disable Windows Features
+Enable Windows Photo Viewer
+Add Take Ownership to right-click menu
+Remove 260 character limit
+Disable Visual Feedback
+Add End Unresponsive Processes to right-click menu
+Add Empty Recycle Bin to right-click menu
+Disable Step Recorder
+Disable AutoPlay
+Disable Enhanced Directory Creation
+Disable App Launch Tracking
+Turn off XBox Game Bar
+Disable Hardware Accelerated GPU Scheduling
+Turn off ReadyBoost
+Add Old Volume Control to right-click menu
+Add Copy as Path option to right-click menu
+Disable JPEG Desktop Wallpaper Quality Reduction
+Bypass Windows 11 TPM/SecureBoot
+Disable Reserved Storage
+Remove "Your device does not meet the minimum requirements" watermark on Windows 11 Desktop
+Disable Modern Standby
+Remove Windows Defender ...
+Disable "Let's finish setting up your device" prompt in Windows 11
+Disable Privacy Settings Experience during sign-in in Windows 11
+Disable OneDrive in Windows 11
+Disable Kernel Isolation Memory Integrity in Windows 11
+Disable including drivers in Windows updates
+Disable automatic Windows upgrade
+Remove Chat button from taskbar in Windows 11
+Restore old right-click context menu in Windows 11
+Turn off automatic installation of Microsoft Teams
+Start Dism Reset Base process
+Convert Esd to Wim
+Convert Wim to Esd
+LZMS Solid compression for Install.wim
+Integrate custom Regedit files
+Add custom cursor files
+Add custom media files
+Add custom theme files
+Add custom System32 files
+Add custom SysWOW64 files
+Add custom desktop background files
+Add custom desktop files and folders.
+-----------------------------------------------------------------------------------
