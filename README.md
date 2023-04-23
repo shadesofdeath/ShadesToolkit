@@ -7,7 +7,7 @@ Shades Toolkit is a tool that allows you to customize your Windows ISO files and
 - Extract ISO file to a folder
 - Mount Wim file
 - Dism Method Debloat (Fast - Superficial)
-- ToolkitHelper Method (Slow - Thorough)
+- ToolkitHelper Method Debloat (Slow - Thorough)
 - Integrate custom Reg files into the image
 - Add custom Cursor files
 - Add custom Media files
