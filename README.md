@@ -55,6 +55,9 @@ Shades Toolkit is a tool that allows you to customize your Windows ISO files and
 - Integrate MicrosoftStore
 - Customize ContextMenu
 - Change the PowerShell execution policy level
+- Unattended Program Installation feature (Experimental!)
+- Hide the Taskbar MeetNow icon.
+- Disable Bing search in the Start Menu.
 
 ## Usage 📖
 
