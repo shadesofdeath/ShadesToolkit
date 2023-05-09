@@ -58,6 +58,9 @@ Shades Toolkit is a tool that allows you to customize your Windows ISO files and
 - Unattended Program Installation feature (Experimental!)
 - Hide the Taskbar MeetNow icon.
 - Disable Bing search in the Start Menu.
+- Change Image Name and Description.
+- Change OEM information.
+- Automatically skip the "Press any key to continue..." prompt on Windows boot screen
 
 ## Usage 📖
 
