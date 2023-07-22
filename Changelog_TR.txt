@@ -1,0 +1,165 @@
+
+ ★ ★ ★ ShadesToolkit Sürüm Bilgileri ★ ★ ★
+
+ ★★ Sürüm 2.3 ★★
+- DNS Adresi değiştirme eklendi
+- VisualCppRedist AIO Entegre etme özelliği eklendi
+
+ ★★ Sürüm 2.2 ★★
+- Kullanıcı Şifresinin son kullanma tarihini devre dışı bırak özelliği eklendi
+- Eski Windows 7 benzeri önyükleme menüsünü etkinleştirin (LegacyBoot)
+- Telemetry Devre Dışı Bırak
+- Etkinlik Geçmişini Microsoft'a Göndermeyi  Devre Dışı Bırak
+- Ayarlar uygulamasında Önerilen içeriğiği göstermeyi kapat
+- Uygulamalarda Kişiselleştirilmiş Reklamlar için Reklam Kimliğini Devre Dışı Bırak
+- Uygulama Başlatma Takibini Devre Dışı Bırak
+- Uygulamaların Konuma Erişmesine İzin Verme
+- Saydamlığı Devre Dışı Bırak
+- Kilit Ekranı Spot Işığını Devre Dışı Bırak
+- Renk Yaygınlığını Etkinleştir
+- Seçim Menüsü Ekle
+- "Cevap Vermeyen Tüm Görevleri Sonlandır" Menüsü Ekle
+- Sürücülerin Bağlam Menüsüne Optimize Ekle
+- Kalıcı Olarak Sil'e Bağlam Menüsüne Ekle
+- Kişiselleştir (klasik) bağlam menüsü ekle
+- Gezgin'i Yeniden Başlat Bağlam Menüsüne Ekle
+- Masaüstü Bağlam Menüsüne Güvenli Mod Ekle
+- SFC /SCANNOW Bağlam Menüsüne Ekle
+- "Windows Terminal'da Aç (Yönetici)" bağlam menüsü ekle
+- "Gelişmiş Başlangıç'a Önyükle" Bağlam Menüsüne Ekle
+- "Gelişmiş güvenlik" Bağlam Menüsüne Ekle
+- Sahibi Değiştir Bağlam Menüsüne Ekle
+- "Güç Planını Seç" bağlam menüsü ekle
+- WinSxS Bileşen Mağazası Temizleme Bağlam Menüsüne Ekle
+- "Klasöre Kopyala" ve "Klasöre Taşı" Bağlam Menüsüne Ekle
+- "Aydınlık veya Koyu Modu Seç" Bağlam Menüsüne Ekle
+
+ ★★ Sürüm 2.1 ★★
+- OEM Bilgileri Değiştirme Özelliği eklendi
+- Windows Boot ekranındaki "Devam etmek için bir tuşa basın.." uyarısını otomatik atla
+- Windows Update Bir sonraki Windows Sürümü belirleme seçeneklerine "23H2" Seçeneği eklendi
+
+ ★★ Sürüm 2.0 ★★
+- Katılımsız Uygulama Ekleme Özelliği Sorunluydu Düzeltildi
+- Küçük tasarımsal değişiklikler
+- Bazı hata düzeltmeleri
+- Imaj Adı ve Açıklaması değiştirme özelliği eklendi
+- Taskbar MeetNow simgesini gizle Windows 10
+- Başlat Menüsü Bing aramasını devre dışı bırak
+
+ ★★ Sürüm 1.9 ★★
+- Katılımsız Program Ekleme özelliği eklendi (Deneysel!)
+
+★★ Version 1.8 Hotfix ★★
+- Tüm reg sorunları çözüldü.
+- Index Silme özelliğinde indexleri tek tek silmek yerine artık tek seferde birden fazla index silinebilir.
+
+ ★★ Sürüm 1.8 ★★
+- Windows 11 TPM Fix özelliği daha basitleştirildi.
+- ISO Oluşturma bölümü  GUI Arayüz eklendi
+- Kullanıcı hesabı denetim ayarını hiçbir zaman uyarma (eklendi)
+- Başlatma, Kapatma, Oturum Açma ve Oturumu Kapatma Sırasında Ayrıntılı Bilgileri Göster (eklendi)
+- Başlangıç da NumLock otomatik etkinleştir (eklendi)
+- Kontrol mekanizmaları geliştirildi ve birkaç hata düzeltmesi.
+
+ ★★ Sürüm 1.7 ★★
+- Bağlam Menüsüne kısayol ekleme özelliği getirildi.
+- WimLib 1.14 Sürümüne güncellendi.
+- PowerShell yürütme politikası seviyesini değiştir
+- Bazı spesifik geliştirmeler ve hata düzeltmeleri.
+
+ ★★ Sürüm 1.6 ★★
+- Microsoft Store entegre etme özelliği eklendi
+- ISO Dosyası klasöre çıkarma bölümüne GUI Arayüz eklendi.
+- ToolkitHelper debloat metodu arayüzü daha modern hale getirildi.
+- Çalışma yaparken rap dinlemek isteyenlere müzik çalar ekledim (Diğer isimli menüde)
+
+ ★★ Sürüm 1.5 ★★
+- Dism Reset Base eklendi
+- Driver entegre etme özelliği eklendi
+
+ ★★ Sürüm 1.4 ★★
+- Debloat bölümüne ToolkitHelper metodu eklendi
+- Bazı küçük hatalar düzeltildi
+
+ ★★ Sürüm 1.3 ★★
+- Küçük hata düzeltmeleri
+- Değişiklikleri kaydettikten sonra artık [DELETED] Klasörü oluşma sorunu çözüldü
+  yani artık wim boyutu çok daha düşük boyutta çıkacak.
+- Dism Reset Base özelliği kaldırıldı bunun yerine alternatifi olan "Sistem Açıldıktan sonra
+  Sistem Dosyalarını Sıkıştır" Özelliğini çalıştırabilirsiniz.
+- Windows Servisleri 15 adet yeni servis eklendi.
+- Listdeki tüm servisleri tek tuşla devre dışı bırakılabilir.
+
+ ★★ Sürüm 1.2 ★★
+- Autounattend.xml dosyası oluşturma bölümüne geliştirildi.
+- DefaultLayout.xml özelliği geliştirildi
+- Windows Uygulama Temasını Karanlık Mod yap
+- Windows Temasını Karanlık Mod yap
+- Masaüstünde Bilgisayarım Kısayolunu Ekle
+- Masaüstünde Denetim Masası Kısayolunu Ekle
+- Microsoft Teams Otomatik kurulumunu kapat özelliği çalışmıyordu düzeltildi
+- Masaüstüne MASS_AIO Windows Etkinleştirme Scripti ekle
+- Bypass Windows 11 TPM/SecureBoot özelliği artık çalışıyor
+- Geliştiriciye destek amaçlı küçük ekleme yapıldı
+
+ ★★ Sürüm 1.1 ★★
+- Windows Servisleri eklendi
+- ISO Çıktısı artık "ISO" Klasörüne kaydedilecek
+- Windows Update bir sonraki windows sürümünü seçebileceğiniz ayarlar eklendi
+- Autounattend.xml dosyası oluşturuma özelliği eklendi
+- Bazı yazım hataları düzeltildi.
+
+ ★★ Sürüm 1.0 ★★ 
+- İlk yapı v1.0 Beta
+- Debloat
+- OneDrive Kaldır
+- Microsoft Edge Kaldır
+- Windows Defender Kaldır
+- WinPE Kaldır
+- Internet Explorer Kaldır
+- Windows Media Player Kaldır
+- Windows Özellikleri Etkinleştir-Devre Dışı Bırak
+- Windows Fotoğraf Görüntüleyicisini Etkinleştir
+- Sağ-tık menüsüne Sahiplik Al ekle
+- 260 Karakter Sınırlamasını Kaldır
+- Görsel Geribildirim kapat (Visual Feedback)
+- Sağ-tık menüsüne Yanıt Vermeyen işlemlerini sonlandır ekle
+- Sağ-tık menüsüne Geri dönüşüm kutusunu boşalt ekle
+- Adım Kaydedicisini devre dışı bırak
+- Otomatik Oynat devre dışı bırak
+- Gelişmiş dizin oluşturma devre dışı bırak
+- Uygulama Başlatma Takibini Devre Dışı Bırak
+- XBox Game Bar kapat
+- Donanım Hızlandırmalı GPU Zamanlamasını Devre Dışı Bırak
+- Hazırda Bekletme Devre Dışı Bırak
+- Eski Ses Çubuğunu ekle
+- Sağ-tık Yol Olarak Kopyala seçeneği ekle
+- JPEG Masaüstü Duvar Kağıdı Kalitesini Düşürme devre dışı bırak
+- Bypass Windows 11 TPM/SecureBoot
+- Ayrılmış Depolamayı Devre Dışı Bırak  
+- Windows 11 Masaüstünde "Sistem gereksinimleri karşılanmadı" Filigranını kaldırın
+- Modern Beklemeyi Devre Dışı Bırak 
+- Windows Defender Deve Dışı Bırak
+- Windows 11'de cihazınızın kurulumunu tamamlayalım uyarısını Devre Dışı Bırak
+- Windows 11'de Oturum Açma Sırasında Gizlilik Ayarları Deneyimini Seçmeyi Devre Dışı Bırak
+- OneDrive Devre Dışı Bırak
+- Windows 11'de Çekirdek İzolasyon Bellek Bütünlüğünü Devre Dışı Bırak
+- Windows Güncellemelerine Sürücüleri Dahil Etmeyi Devre Dışı Bırak
+- Otomatik Windows Yükseltmesini Devre Dışı Bırak 
+- Windows 11'de Görev Çubuğuna Sohbet Düğmesini Kaldır
+- Windows 11'de Eski Sağ Tıklama Bağlam menüsünü geri yükle
+- Microsoft Team Otomatik kurulumunu kapat
+- Dism Reset Base işlemini Başlat
+- Esd-Wim çevirme
+- Wim-Esd çevirme
+- Install.wim LZMS Solid sıkıştırma
+- Özel Regedit Dosyası Entegre etme
+- Özel İmleç dosyalarını ekle
+- Özel Medya dosyalarını ekle
+- Özel Tema dosyalarını ekle
+- Özel System32 dosyalarını ekle
+- Özel SysWOW64 dosyalarını ekle
+- Özel Masaüstü arka planı dosyalarını ekle,
+- Özel Masaüstü Dosya-Klasör ekle
+-----------------------------------------------------------------------------------
