@@ -61,7 +61,34 @@ Shades Toolkit is a tool that allows you to customize your Windows ISO files and
 - Change Image Name and Description.
 - Change OEM information.
 - Automatically skip the "Press any key to continue..." prompt on Windows boot screen
-
+- Disable the expiration date feature of the User Password.
+- Enable the legacy boot menu similar to the old Windows 7.
+- Disable Telemetry.
+- Disable Sending Activity History to Microsoft.
+- Turn off showing recommended content in the Settings app.
+- Disable Advertising ID for Personalized Ads in Applications.
+- Disable Application Launch Tracking.
+- Do not allow Applications to Access Location
+- Disable Transparency
+- Disable Lock Screen Spotlight
+- Enable Color Accent
+- Add Selection Menu
+- Add "End All Not Responding Tasks" Menu
+- Optimize Drivers in Context Menu
+- Add "Permanently Delete" to Context Menu
+- Add Personalize (Classic) to Context Menu
+- Add Restart Explorer to Context Menu
+- Add Safe Mode to Desktop Context Menu
+- Add SFC /SCANNOW to Context Menu
+- Add "Open in Windows Terminal (Administrator)" to Context Menu
+- Add "Boot to Advanced Startup" to Context Menu
+- Add "Advanced Security" to Context Menu
+- Add Change Owner to Context Menu
+- Add "Choose Power Plan" to Context Menu
+- Add WinSxS Component Store Cleanup to Context Menu
+- Add "Copy to Folder" and "Move to Folder" to Context Menu
+- Add "Choose Light or Dark Mode" to Context Menu
+.....
 ## Usage 📖
 
 - To extract the ISO file, select the "Extract ISO file to the 'Extracted' folder" option from the "Source" section.
