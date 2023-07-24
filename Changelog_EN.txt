@@ -1,6 +1,9 @@
 
 ★ ★ ★ ShadesToolkit Version Information ★ ★ ★
 
+★★ Version 2.3 Hotfix ★★
+Fixed applying changes screen issue
+
 ★★ Version 2.3 ★★
 Added DNS Address change
 VisualCppRedist AIO integration feature added.

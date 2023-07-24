@@ -1,6 +1,9 @@
 
  ★ ★ ★ ShadesToolkit Sürüm Bilgileri ★ ★ ★
 
+★★ Sürüm 2.3 Hotfix ★★
+Değişiklikleri kaydet menüsünde oluşan sorun düzeltildi.
+
  ★★ Sürüm 2.3 ★★
 - DNS Adresi değiştirme eklendi
 - VisualCppRedist AIO Entegre etme özelliği eklendi
